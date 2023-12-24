@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  .Cardo {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+  }
+  
+  .Cardo:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+      0 10px 100px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Cardo:hover .front {
+    transform: rotateY(-160deg);
+  }
+  
+  .Cardo:hover .happy {
+    visibility: hidden;
+  }
+  
+  .front {
+    position: relative;
+    background-color: #FFF5E0;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+      30px 0 50px rgba(0, 0, 0, 0.4);
+    transition: 0.6s;
+  }
+  
+  .happy {
+    font-family: "Cambria, Cochin";
+    font-size: 30px;
+    color: #860A35;
+    text-align: center;
+    margin: 30px;
+    background-image: linear-gradient(120deg, #F3EDC8 0%, #EAD196, #BF3131 100%);
+    transition: 0.1s;
+    border-radius: 20px;
+  }
+  
+  .spalad {
+    position: absolute;
+  }
+
+  .snorlax {
+   position: absolute;
+   }
+
+  .snorlax::before{
+   position: absolute;
+   }
+
+  .snorlax::after{
+   position: absolute;
+   }
+  #snorsize{
+    height: 390px;
+    width: 400px;
+  }
+  
+  .inside {
+    position: absolute;
+    background-color: #FFF5E0;
+    width: 350px;
+    height: 450px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+  }
+
+  .titlee{
+    color: #333;
+    font-family: "Brush Script MT";
+  }
+  p {
+    font-family: "Brush Script MT";
+    font-size: 29px;
+    margin: 15px;
+    color: #7D0A0A;
+  }
+  
+  .back {
+    font-family: "Cambria, Cochin";
+    font-size: 30px;
+    color: #BF3131;
+    text-align: center;
+    margin: 30px;
+    outline-color: #EAD196;
+    outline-style: dotted;
+    border-radius: 20px;
+  }
+
+  .pokemon {
+    position: absolute;
+    left: 200px;
+    top: 370px;
+    color: #333;
+  }
